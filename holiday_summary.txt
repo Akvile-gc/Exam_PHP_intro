@@ -1,0 +1,16 @@
+Destination: Paris
+Titles: Romantic Paris, Hidden Paris
+Total: 208000
+************
+Destination: New York
+Titles: Amazing New York
+Total: 56679
+************
+Destination: Sydney
+Titles: Spectacular Sydney
+Total: 37170
+************
+Destination: Paris
+Titles: Hidden Paris, Romantic Paris
+Total: 208000
+************

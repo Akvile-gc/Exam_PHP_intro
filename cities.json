@@ -1,0 +1,53 @@
+{
+  "country1": {
+    "name": "Lithuania",
+    "population": "2.801 mln",
+    "capital": "Vilnius",
+    "capital_population": "544.386",
+    "language": "Lithuanian",
+    "other_cities": {
+      "city1": {
+        "name": "Kaunas",
+        "population": "295.269"
+      },
+      "city2": {
+        "name": "Klaipeda",
+        "population": "152.818"
+      }
+    }
+  },
+  "country2": {
+    "name": "Brazil",
+    "population": "214.3 mln",
+    "capital": "Brasilia",
+    "capital_population": "4.292 mln",
+    "language": "Portugese",
+    "other_cities": {
+      "city1": {
+        "name": "Sao Paulo",
+        "population": "12.33 mln"
+      },
+      "city2": {
+        "name": "Rio de Janeiro",
+        "population": "6.748 mln"
+      }
+    }
+  },
+  "country3": {
+    "name": "Australia",
+    "population": "25.69 mln",
+    "capital": "Canberra",
+    "capital_population": "395.790",
+    "language": "English",
+    "other_cities": {
+      "city1": {
+        "name": "Sydney",
+        "population": "5.312 mln"
+      },
+      "city2": {
+        "name": "Melbourne",
+        "population": "5.078 mln"
+      }
+    }
+  }
+}
