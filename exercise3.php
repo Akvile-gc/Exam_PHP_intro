@@ -43,20 +43,24 @@ $holidays = [
     ],
 ];
 
-function tripSummary(array $trips)
+function tripSummary(array $trips):void
 {
-//    for ($i = 0; $i < count($trips); $i++){
-//        if ($trips[$i]['price'] !== null){
-//            if (in_array($trips[$i]['destination'], $trips[$i]) ){
-//            }
-//        }
-//        }
+    foreach ($trips as $currentKey => $currentTrip) {
+        if ($currentTrip['price'] !== null) {
+            foreach ($trips as $searchKey => $searchTrip) {
+                if ($searchTrip['destination'] == $currentTrip['destination']) {
+                    if ($searchKey != $currentKey) {
 
-    foreach ($trips as $trip){
-        if ($trip['price'] !== null){
-            echo 'Destination: ' . $trip['destination'] . PHP_EOL;
-            echo 'Titles: ' . $trip['title'] . PHP_EOL;
-            echo 'Total: ' . $trip['price'] * $trip['tourists']. PHP_EOL;
+                        $currentTrip['title'] = $currentTrip['title'] . ', ' . $searchTrip['title'];
+                        $currentTrip['price'] = $currentTrip['price'] + $searchTrip['price'];
+                        $currentTrip['tourists'] = $currentTrip['tourists'] + $searchTrip['tourists'];
+                        unset($searchTrip);
+                    }
+                }
+            }
+            echo 'Destination: ' . $currentTrip['destination'] . PHP_EOL;
+            echo 'Titles: ' . $currentTrip['title'] . PHP_EOL;
+            echo 'Total: ' . $currentTrip['price'] * $currentTrip['tourists']. PHP_EOL;
             echo '************' . PHP_EOL;
         }
     }
